@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Search Engine</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm w-100"
+              />
+            </div>
+            <div class="col-3">
+              <button
+                class="btn btn-success w-100"
+                id="current-location-button"
+              >
+                Current
+              </button>
+            </div>
+          </div>
+        </form>
+        <h1 id="city"></h1>
+        <ul>
+          <li id="date"></li>
+          <li id="description"></li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <img
+                src="https://www.weathersa.co.za/images/animated/newicons/Sunny.gif"
+                alt=""
+                class="icon float-left"
+              />
+              <div class="float-left">
+                <span class="temperature" id="temperature"></span
+                ><span class="units">°C</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card" style="width: 14rem">
+        <div class="card-body">
+          <h5 class="card-title">Sunday</h5>
+          <p class="card-text">29°14°</p>
+          <img
+          src="https://www.weathersa.co.za/images/animated/newicons/Sunny.gif""
+          alt="">
+        </div>
+      </div>
+      <div class="card" style="width: 14rem">
+        <div class="card-body">
+          <h5 class="card-title">Monday</h5>
+          <p class="card-text">29°10°</p>
+          <img
+          src="https://www.weathersa.co.za/images/animated/newicons/Sunny.gif""
+          alt="">
+        </div>
+      </div>
+      <div class="card" style="width: 14rem">
+        <div class="card-body">
+          <h5 class="card-title">Tuesday</h5>
+          <p class="card-text">30°10°</p>
+          <img
+          src="https://www.weathersa.co.za/images/animated/newicons/Sunny.gif""
+          alt="">
+        </div>
+      </div>
+      <div class="card" style="width: 14rem">
+        <div class="card-body">
+          <h5 class="card-title">Wednesday</h5>
+          <p class="card-text">32°15°</p>
+          <img
+          src="https://www.weathersa.co.za/images/animated/newicons/Sunny.gif""
+          alt="">
+        </div>
+      </div>
+      <div class="card" style="width: 14rem">
+        <div class="card-body">
+          <h5 class="card-title">Thursday</h5>
+          <p class="card-text">33°15°</p>
+          <img
+          src="https://www.weathersa.co.za/images/animated/newicons/Sunny.gif""
+          alt="">
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a href="https://github.com/Thembanict/my-weather-app" target="-blank"
+        >Open-source code
+      </a>
+      by Cynthia Thembani Skhosana
+    </footer>
+    <script src="src/index.mjs"></script>
+  </body>
+</html>
